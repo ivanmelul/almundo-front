@@ -1,0 +1,97 @@
+<div id="SIDEBAR_DIV_2">
+		<span id="SIDEBAR_SPAN_3"><span id="SIDEBAR_SPAN_4">Filtrar</span></span><span id="SIDEBAR_SPAN_5"><span id="SIDEBAR_SPAN_6"></span><span id="SIDEBAR_SPAN_7">Eliminar filtros</span></span>
+	</div>
+	<div id="SIDEBAR_DIV_8">
+		<span id="SIDEBAR_SPAN_9"><span id="SIDEBAR_SPAN_11">Nombre de hotel</span></span>
+
+		<div id="SIDEBAR_DIV_13">
+			<div id="SIDEBAR_DIV_15">
+				<div id="SIDEBAR_DIV_16">
+					<label id="SIDEBAR_LABEL_17">
+					</label>
+					<div id="SIDEBAR_DIV_18">
+						<div id="SIDEBAR_DIV_19">
+							<input type="text" placeholder="Ingrese el nombre del hotel" id="SIDEBAR_INPUT_20" ng-model="nameToFind" />
+						</div>
+						<div id="SIDEBAR_DIV_21">
+							<input type="button" value="Aceptar" id="SIDEBAR_INPUT_22" ng-click="findNameHotel();" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="SIDEBAR_DIV_23">
+		<span id="SIDEBAR_SPAN_24"><span id="SIDEBAR_SPAN_26">Precio por noche</span></span>
+
+
+		<div id="SIDEBAR_DIV_28">
+
+<rzslider rz-slider-model="slider.minValue"
+          rz-slider-high="slider.maxValue"
+          rz-slider-options="slider.options"></rzslider>
+
+		</div>
+
+	</div>
+	<div id="SIDEBAR_DIV_44">
+		<span id="SIDEBAR_SPAN_45"><span id="SIDEBAR_SPAN_47">Estrellas</span></span>
+
+
+
+
+		<div id="SIDEBAR_DIV_49">
+			<div id="SIDEBAR_DIV_50">
+				<div id="SIDEBAR_DIV_51">
+					<label for="all_STAR" id="SIDEBAR_LABEL_52">
+						<input type="checkbox" name="all_STAR" id="SIDEBAR_INPUT_53" ng-model="starsArray.all" ng-click="changeStarsFilter('all')" />
+					</label>
+<span id="SIDEBAR_SPAN_54"></span>
+<span id="SIDEBAR_SPAN_55">Todas las estrellas</span>
+<span id="SIDEBAR_SPAN_56">(286)</span>
+				</div>
+
+				<div id="SIDEBAR_DIV_57">
+					<label for="5" id="SIDEBAR_LABEL_58">
+						<input type="checkbox" name="5" id="SIDEBAR_INPUT_59" ng-model="starsArray['5']" ng-click="changeStarsFilter('5')" />
+					</label>
+<span id="SIDEBAR_SPAN_61" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_62" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_63" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_64" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_65" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_66" >(7)</span>
+				</div>
+				<div id="SIDEBAR_DIV_67">
+					<label for="4" id="SIDEBAR_LABEL_68">
+						<input type="checkbox" name="4" id="SIDEBAR_INPUT_69" ng-model="starsArray['4']" ng-click="changeStarsFilter('4')" />
+					</label>
+<span id="SIDEBAR_SPAN_71" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_72" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_73" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_74" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_75">(81)</span>
+				</div>
+				<div id="SIDEBAR_DIV_76">
+					<label for="3" id="SIDEBAR_LABEL_77">
+						<input type="checkbox" name="3" id="SIDEBAR_INPUT_78" ng-model="starsArray['3']" ng-click="changeStarsFilter('3')" />
+					</label>
+
+<span id="SIDEBAR_SPAN_80" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_81" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_82" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_83">(162)</span>
+				</div>
+				<div id="SIDEBAR_DIV_84">
+					<label for="2" id="SIDEBAR_LABEL_85">
+						<input type="checkbox" name="2" id="SIDEBAR_INPUT_86" ng-model="starsArray['2']" ng-click="changeStarsFilter('2')" />
+					</label>					
+<span id="SIDEBAR_SPAN_88" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_89" class="glyphicon glyphicon-star"></span>
+<span id="SIDEBAR_SPAN_90">(36)</span>
+				</div>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,12 @@
+<div class="">
+<main class="">
+<section id="SIDEBAR_SECTION_1">
+	<filter ng-if="vm.hotels.length > 0" hotels="vm.hotels" filtered-hotels="vm.filteredHotels"></filter>
+</section>
+<section id="SECTION_0">
+	<hotel ng-repeat="hotel in vm.filteredHotels" hotelname="hotel.name" stars="hotel.stars" price="hotel.price" ></hotel>
+</section>
+
+</main>
+
+</div>

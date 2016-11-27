@@ -1,0 +1,87 @@
+<article id="ARTICLE_1">
+	<result id="RESULT-SLIDER_2">
+		<div id="DIV_3">
+
+			<div id="DIV_4">
+				<p id="P_5">
+					¡Hotel recomendado!
+				</p>
+			</div>
+
+				<div id="DIV_7">
+					<span id="SPAN_8">22% OFF</span>
+				</div>
+
+			<div id="DIV_9">
+				<div id="DIV_10">
+					<div id="DIV_11">
+					</div>
+					<div id="DIV_14">
+					</div>
+				</div>
+			</div>
+		</div>
+	</result>
+	<div id="DIV_17">
+		<div id="DIV_18">
+			<h1 id="H1_19" ng-bind="hotelname">
+				
+			</h1>
+			<p id="P_20">
+				<span ng-repeat="asd in getNumber(stars) track by $index" class="glyphicon glyphicon-star"></span>
+
+			</p>
+			<div id="DIV_27">
+			</div>
+			<!-- ngIf: hotel.rate.meal_plan.code -->
+
+			
+
+			<div id="DIV_36">
+			</div>
+			<!-- ngIf: hotel.amenities.length > 0 -->
+
+		
+
+		</div>
+	</div>
+	<!--PRICEBOX-->
+
+	<div id="DIV_51">
+		<div id="DIV_52">
+			<!-- ngIf: hotel.rate.provider -->
+
+			<p id="P_55">
+				Precio por noche por habitación
+			</p>
+			<p id="P_56">
+				<span id="SPAN_57">ARS</span> <span id="SPAN_58" ng-bind="price"></span>
+			</p>
+			<!-- ngIf: hotel.rate.price.discount.amount && hotel.rate.price.discount.percentage >= 5 -->
+
+			<p id="P_57">
+				Precio sin promo <span id="SPAN_60">ARS</span> <strong id="STRONG_61"  ng-bind="price"></strong>
+			</p>
+			<!-- end ngIf: hotel.rate.price.discount.amount && hotel.rate.price.discount.percentage >= 5 -->
+
+			<legal id="LEGAL-TAXES_62">
+				<!-- ngIf: legalTaxesCtrl.showText -->
+<span id="SPAN_63">Impuestos y tasas no incluidos</span>
+				<!-- end ngIf: legalTaxesCtrl.showText -->
+
+			</legal><a href="#" id="A_64">Ver hotel</a>
+			<!-- ngRepeat: method in hotelCtrl.getPaymentMethods() -->
+
+			<p id="P_65">
+				<!-- ngIf: method === 'PREPAID' -->
+<strong id="STRONG_66">Pagá en cuotas</strong>
+				<!-- end ngIf: method === 'PREPAID' -->
+
+				<!-- ngIf: method === 'PAY_AT_DESTINATION' -->
+
+			</p>
+			<!-- end ngRepeat: method in hotelCtrl.getPaymentMethods() -->
+
+		</div>
+	</div>
+</article>
